@@ -1,8 +1,20 @@
-* {
+/* General Styles */
+/* * {
   border-radius: 30px;
-}
+} */
+
 body {
   background-color: lightgoldenrodyellow;
+}
+
+.container {
+  background-color: skyblue;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Questrial";
+  background-color: burlywood;
 }
 
 /* Navigation section */
@@ -11,47 +23,65 @@ body {
   background-color: #e3f2fd;
 }
 
-/* Header section */
-.header-wrapper {
-  height: 500px;
+nav {
+  padding: 20px;
 }
 
-.header {
-  background-color: powderblue;
+/* Header section */
+/* .header-wrapper {
+  height: 500px;
+} */
+
+header {
   width: 100%;
   text-align: center;
   font-family: "Questrial";
+  padding: 20px;
 }
+
+/* header h1 {
+  background-color: burlywood;
+} */
 
 /* Skills section */
 .skills {
-  background-color: powderblue;
   text-align: center;
   font-family: "Questrial";
 }
+
+/* .skills h1 {
+  background-color: burlywood;
+} */
 
 .skill-item {
   display: inline;
   padding: 20px;
 }
 
+.fab {
+  width: 50px;
+  height: 50px;
+  font-size: 36px;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  padding: 0 0 15px 0;
+}
+
 /* Main section */
 
-/* .main-container {
-  background-color: paleturquoise;
-  width: 100%;
-  height: 1000px;
-  text-align: center;
-  border-top: 5px;
-} */
-
 /* Projects section */
-
-.projects h1 {
-  text-align: center;
-  background-color: powderblue;
-  font-family: "Questrial";
+.projects {
+  padding: 20px 0 0 0;
 }
+
+/* .projects h1 {
+  text-align: center;
+  background-color: burlywood;
+  font-family: "Questrial";
+} */
 
 .project {
   width: 50%;
@@ -63,23 +93,20 @@ body {
 }
 
 .button {
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Publication section */
 
-/* main {
-  background-color: powderblue;
-} */
-
 .publications {
-  background-color: powderblue;
+  padding: 20px 0 0 0;
 }
 
-.publications h1 {
+/* .publications h1 {
   text-align: center;
   font-family: "Questrial";
-}
+  background-color: burlywood;
+} */
 
 .publication {
   width: 25%;
@@ -92,7 +119,7 @@ body {
 /* About me section */
 
 .about-me {
-  background-color: burlywood;
+  /* background-color: burlywood; */
   display: inline-block;
   padding: 20px;
   border-radius: 30px;
@@ -105,18 +132,18 @@ body {
 .about-me h1 {
   text-align: center;
   font-family: "Questrial";
+  background-color: burlywood;
 }
 
 /* Footer section */
 
 .footer-wrapper {
-  background-color: gray;
   width: 100%;
 }
 
 .footer-item {
   display: inline;
-  padding: 20px 20px 20px 0;
+  padding: 20px 20px 20px 20px;
   float: right;
 }
 
