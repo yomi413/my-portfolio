@@ -11,7 +11,7 @@ body {
   background-color: skyblue;
 }
 
-h1 {
+.title {
   text-align: center;
   font-family: "Questrial";
   background-color: burlywood;
@@ -28,9 +28,6 @@ nav {
 }
 
 /* Header section */
-/* .header-wrapper {
-  height: 500px;
-} */
 
 header {
   width: 100%;
@@ -39,19 +36,11 @@ header {
   padding: 20px;
 }
 
-/* header h1 {
-  background-color: burlywood;
-} */
-
 /* Skills section */
 .skills {
   text-align: center;
   font-family: "Questrial";
 }
-
-/* .skills h1 {
-  background-color: burlywood;
-} */
 
 .skill-item {
   display: inline;
@@ -73,22 +62,23 @@ header {
 /* Main section */
 
 /* Projects section */
-.projects {
-  padding: 20px 0 0 0;
+.projects-container {
+  display: inline-block;
 }
 
-/* .projects h1 {
-  text-align: center;
-  background-color: burlywood;
-  font-family: "Questrial";
-} */
+.projects {
+  /* padding: 20px 0 0 0;
+  background-color: green;
+  max-height: 100%; */
+  /* display: block; */
+}
 
 .project {
   width: 50%;
   max-height: 100%;
   float: left;
-  display: inline-block;
-  padding: 50px;
+  display: inline;
+  padding: 20px;
   text-align: center;
 }
 
@@ -97,36 +87,35 @@ header {
 }
 
 /* Publication section */
-
+.publications-container {
+  display: inline-block;
+}
 .publications {
   padding: 20px 0 0 0;
 }
 
-/* .publications h1 {
-  text-align: center;
-  font-family: "Questrial";
-  background-color: burlywood;
-} */
-
 .publication {
   width: 25%;
-  max-height: 100%;
   float: left;
   display: inline-block;
-  padding: 50px;
+  padding: 20px;
 }
 
 /* About me section */
+.about-me-container {
+  display: inline-block;
+}
 
 .about-me {
-  /* background-color: burlywood; */
-  display: inline-block;
+  /* display: inline-block; */
   padding: 20px;
   border-radius: 30px;
+  /* float: left; */
 }
 
 .about-me img {
   border-radius: 50px;
+  float: left;
 }
 
 .about-me h1 {
@@ -135,18 +124,29 @@ header {
   background-color: burlywood;
 }
 
+.about-me p {
+  float: none;
+  font-size: 18px;
+}
+
 /* Footer section */
 
-.footer-wrapper {
+.footer-container {
+  display: inline-block;
+  float: left;
   width: 100%;
+  text-align: center;
 }
 
 .footer-item {
-  display: inline;
-  padding: 20px 20px 20px 20px;
-  float: right;
+  display: inline-block;
+  padding: 10px 20px 20px 20px;
+  clear: right;
+  /* clear: right; */
 }
 
 .copyright {
-  float: left;
+  padding: 10px;
 }
+
+/* Media quieries */
