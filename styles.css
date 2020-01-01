@@ -9,6 +9,7 @@ body {
 
 .container {
   background-color: skyblue;
+  border-radius: 20px;
 }
 
 .title {
