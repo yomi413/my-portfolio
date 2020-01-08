@@ -27,66 +27,78 @@
   <body>
     <div class="container">
       <!--Navigation Bar-->
-      <div class="nav-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"><h2>Yomaira Escano</h2></a>
-          <button
-            class="navbar-toggler navbar-toggler-right collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="navbar-collapse collapse " id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item mx-0 mx-lg-1">
-                <a
-                  class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  href="#Home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item mx-0 mx-lg-1">
-                <a
-                  class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  href="#Skills"
-                  >Skills</a
-                >
-              </li>
-              <li class="nav-item mx-0 mx-lg-1">
-                <a
-                  class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  href="#Projects"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item mx-0 mx-lg-1">
-                <a
-                  class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  href="#Publications"
-                  >Publications</a
-                >
-              </li>
-              <li class="nav-item mx-0 mx-lg-1">
-                <a
-                  class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  href="#About Me"
-                  >About Me</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#about-me">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
+      <!-- <div class="nav-wrapper"> -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-light" id="burger-button">
+        <a class="navbar-brand" href="#"><h2>Yomaira Escano</h2></a>
+        <button
+          class="navbar-toggler navbar-toggler-right collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="navButton()"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-collapse collapse " id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#publications"
+                >Publications</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#about-me"
+                >About Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <!-- </div> -->
 
       <!--Header-->
 
       <div class="header">
-        <h1 class="title">Mom. Web developer. Life long learner.</h1>
+        <h1>Yomaira Escano</h1>
+        <h3>Web developer. Project Manager. Life long learner.</h3>
         <header>
           <img src="https://i.imgur.com/BhjmWg1.png?1" width="50%" />
         </header>
@@ -95,15 +107,15 @@
       <!--Skills-->
 
       <div class="skills">
-        <h1 class="title">Skills</h1>
+        <h2 class="title" id="skills">Skills</h2>
 
         <ul class="list">
           <li class="skill-item"><i class="fab fa-git-alt"></i></li>
           <li class="skill-item"><i class="fab fa-github"></i></li>
           <li class="skill-item"><i class="fab fa-js-square"></i></li>
           <li class="skill-item"><i class="fab fa-html5"></i></li>
-          <li class="skill-item"><i class="fab fa-react"></i></li>
           <li class="skill-item"><i class="fab fa-css3-alt"></i></li>
+          <li class="skill-item"><i class="fab fa-react"></i></li>
           <li class="skill-item"><i class="fab fa-bootstrap"></i></li>
           <li class="skill-item">
             <img src="https://i.imgur.com/lXLspUo.png" />
@@ -117,7 +129,7 @@
       <!--Projects-->
       <section class="projects">
         <div class="projects-container">
-          <h1 class="title">Projects</h1>
+          <h2 class="title" id="projects">Projects</h2>
           <div class="project">
             <h5>HTML Email Newsletter</h5>
             <a href="http://yescano.com/html-email-newsletter/" target="_blank">
@@ -163,7 +175,7 @@
 
       <section class="publications">
         <div class="publications-container">
-          <h1 class="title">Publications</h1>
+          <h2 class="title" id="publications">Publications</h2>
           <div class="publication">
             <h5>My Git Infographic for Beginners</h5>
             <a
@@ -214,7 +226,7 @@
       <!--About Me-->
       <section>
         <div class="about-me-container">
-          <h1 class="title">About Me</h1>
+          <h2 class="title" id="about-me">About Me</h2>
           <div class="about-me">
             <p>
               <img
@@ -307,5 +319,6 @@
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
